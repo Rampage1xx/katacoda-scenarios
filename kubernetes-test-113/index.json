@@ -24,7 +24,7 @@
     }
   },
   "assets": {
-    "host01": [
+    "master": [
       {
         "file": "*",
         "target": "/root"
