@@ -35,6 +35,12 @@
         "file": "*",
         "target": "/root"
       }
+    ],
+    "node01": [
+      {
+        "file": "*",
+        "target": "/root"
+      }
     ]
   },
   "environment": {
