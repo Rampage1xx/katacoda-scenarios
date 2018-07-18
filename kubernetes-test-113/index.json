@@ -29,6 +29,12 @@
         "file": "*",
         "target": "/root"
       }
+    ],
+    "master": [
+      {
+        "file": "*",
+        "target": "/root"
+      }
     ]
   },
   "environment": {
