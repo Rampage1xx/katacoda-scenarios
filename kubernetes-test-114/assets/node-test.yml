@@ -19,10 +19,7 @@ metadata:
   name: node-config
 data:
   server_port: 3000
-  database_username: test11
-  database_password: qwerty11
-  database_hostname: postgres-service
-
+  PORT: 3000
 
 
 ---
@@ -43,8 +40,13 @@ spec:
     spec:
       containers:
       - name: node-deployment
-        image: node:latest
+        image: godhasu1/node_test113
         imagePullPolicy: IfNotPresent
+        envFrom:
+          - configMapRef:
+              name: node-config
+          - configMapRef:
+              name: postgres-config
       restartPolicy: Always
   selector:
     matchLabels:

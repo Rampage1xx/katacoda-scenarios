@@ -11,6 +11,22 @@ spec:
   type: NodePort
 
 ---
+##spostare su secret successivamente
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  DATABASE_USERNAME: test11
+  DATABASE_PASSWORD: qwerty11
+  DATABASE_HOST: postgres-service
+  DATABASE_NAME: superapp
+  DATABASE_PORT: 5432
+  POSTGRES_USER: test11
+  POSTGRES_PASSWORD: qwerty11
+  POSTGRES_DB: superapp
+
+---
 
 apiVersion: apps/v1
 kind: StatefulSet
