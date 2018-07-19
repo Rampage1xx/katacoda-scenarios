@@ -13,6 +13,20 @@ spec:
 
 ---
 
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-config
+data:
+  server_port: 3000
+  database_username: test11
+  database_password: qwerty11
+  database_hostname: postgres-service
+
+
+
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
